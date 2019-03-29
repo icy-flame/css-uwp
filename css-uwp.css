@@ -1,0 +1,305 @@
+html {
+    --accent-color: 0, 120, 215;
+}
+hr {
+    border: 0px;
+    background-color: #cccccc;
+    height: 1px;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.uwp-button-negative {
+    outline: 0;
+    padding: 6px 18px;
+    border: 2px solid transparent;
+    background-color: #cccccc;
+    color: black;
+    margin-inline-start: 4px;
+    margin-inline-end: 4px;
+    flex-shrink: 0;
+    font-weight: 500;
+    transition: ease transform 0.5s;
+    user-select: none;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+.uwp-button-negative:hover {
+    border-color: rgba(0,0,0,0.4);
+}
+.uwp-button-negative:active {
+    background-color: #999999;
+    border-color: rgba(255,255,255,0.1);
+    transform: scale(0.96);
+    transition: ease all 0.1s;
+}
+.uwp-button-negative:disabled {
+    color: rgba(0,0,0,0.37);
+    cursor: default;
+}
+.uwp-button-negative:disabled:hover {
+    border-color: transparent;
+}
+.uwp-button-positive {
+    outline: 0;
+    padding: 6px 18px;
+    border: 2px solid transparent;
+    background-color: rgb(var(--accent-color));
+    color: white;
+    margin-inline-start: 4px;
+    margin-inline-end: 4px;
+    flex-shrink: 0;
+    font-weight: 500;
+    transition: ease transform 0.5s;
+    user-select: none;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+.uwp-button-positive:hover {
+    border-color: rgba(0,0,0,0.4);
+}
+.uwp-button-positive:active {
+    background-color: #999999;
+    color: black;
+    border-color: rgba(255,255,255,0.1);
+    transform: scale(0.96);
+    transition: ease all 0.1s;
+}
+.uwp-button-positive:disabled {
+    background-color: rgba(0,0,0,0.37);
+    cursor: default;
+}
+.uwp-button-positive:disabled:hover {
+    background-color: rgba(0,0,0,0.37);
+    border-color: transparent;
+}
+/*https://www.w3schools.com/howto/howto_css_custom_checkbox.asp*/
+.uwp-checkbox {
+    display: block;
+    position: relative;
+    padding-left: 24px;
+    user-select: none;
+    margin-inline-start: 4px;
+    margin-inline-end: 4px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+}
+.uwp-checkbox input {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+.uwp-checkmark {
+    display: inline-block;
+    margin-left: -24px;
+    margin-right: 8px;
+    height: 16px;
+    width: 16px;
+    background-color: transparent;
+    border: 2px solid #333333;
+    transition: ease 0.1s all;
+}
+.uwp-checkbox:hover .uwp-checkmark {
+    border-color: black;
+}
+.uwp-checkbox:active .uwp-checkmark {
+    background-color: #666666;
+    border-color: transparent;
+}
+.uwp-checkbox input:checked ~ .uwp-checkmark {
+    background-color: rgb(var(--accent-color));
+    border: 2px solid rgb(var(--accent-color));
+}
+.uwp-checkbox input:checked ~ .uwp-checkmark:after {
+    display: inline-block;
+}
+.uwp-checkbox .uwp-checkmark:after {
+    top: 44%;
+    width: 4px;
+    height: 8px;
+    position: absolute;
+    left: 7px;
+    content: "";
+    display: none;
+    transition: ease 0.2s all;
+    border: solid white;
+    border-width: 0 1px 1px 0;
+    -webkit-transform: translate(0,-50%) rotate(45deg) scale(1.5);
+    -ms-transform: translate(0,-50%) rotate(45deg) scale(1.5);
+    transform: translate(0,-50%) rotate(45deg) scale(1.5);
+}
+.uwp-textbox {
+    padding: 4px 8px;
+    margin-inline-start: 4px;
+    margin-inline-end: 4px;
+    outline: 0;
+    font-size: 14px;
+    border: 2px solid #999999;
+    width: 256px;
+    transition: ease all 0.1s;
+    font-family: sans-serif;
+}
+.uwp-textbox:placeholder {
+    color: #666666; 
+}
+.uwp-textbox:hover {
+    border-color: #666666;
+}
+.uwp-textbox:focus {
+    border-color: rgb(var(--accent-color));
+}
+.uwp-select {
+    background-color: transparent;
+    margin-inline-start: 4px;
+    margin-inline-end: 4px;
+    border: 2px solid #999999;
+    outline: 0;
+    padding: 4px 8px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    transition: ease 0.1s all;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+.uwp-select:hover {
+    border-color: #666666;
+}
+.uwp-slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 256px;
+    height: 2px;
+    background-color: #999999;
+    outline: none;
+}
+.uwp-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 8px;
+    height: 24px;
+    background: rgb(var(--accent-color));
+    cursor: pointer;
+    border: 0;
+    border-radius: 4px;
+    transition: ease all 0.1s;
+}
+.uwp-slider:hover {
+    background-color: #888888;
+}
+.uwp-slider::-webkit-slider-thumb:hover {
+    background-color: #171717;
+}
+.uwp-slider::-webkit-slider-thumb:active {
+    background-color: #cccccc;
+}
+.uwp-slider::-moz-range-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 8px;
+    height: 24px;
+    background: rgb(var(--accent-color));
+    cursor: pointer;
+    border: 0;
+    border-radius: 4px;
+    transition: ease all 0.1s;
+}
+.uwp-slider::-moz-range-thumb:hover {
+    background-color: #171717;
+}
+.uwp-slider::-moz-range-thumb:active {
+    background-color: #cccccc;
+}
+.uwp-slider::-moz-range-thumb:active {
+    background-color: #cccccc;
+}
+.uwp-radiomark {
+    display: inline-block;
+    margin-left: -25px;
+    margin-right: 7px;
+    height: 16px;
+    width: 16px;
+    background-color: transparent;
+    border: 2px solid #333333;
+    border-radius: 50%;
+    transition: ease 0.2s all;
+}
+.uwp-checkbox:hover .uwp-radiomark {
+    border-color: black;
+}
+.uwp-checkbox:active .uwp-radiomark {
+    border-color: #666666;
+}
+.uwp-checkbox input:checked ~ .uwp-radiomark {
+    border: 2px solid;
+    border-color: rgb(var(--accent-color));
+}
+.uwp-checkbox input:checked ~ .uwp-radiomark:after {
+    opacity: 1;
+}
+.uwp-checkbox .uwp-radiomark:after {
+    content: "";
+    position: absolute;
+    opacity: 0;
+    transition: ease 0.1s all;
+    background-color: #333333;
+    left: 4px;
+    top: calc(50% - 4px);
+    width: 9px;
+    height: 9px;
+    -webkit-transform: translateX(0.5px) translateY(-0.5px);
+    -ms-transform: translateX(0.5px) translateY(-0.5px);
+    transform: translateX(0.5px) translateY(-0.5px);
+    border-radius: 50%;
+}
+.uwp-switch {
+    position: relative;
+    display: inline-block;
+    margin-inline-start: 4px;
+    margin-inline-end: 4px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    width: 44px;
+    height: 20px;
+}
+.uwp-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.uwp-switchslider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: transparent;
+    border: 2px solid #333333;
+    transition: ease all 0.1s;
+    border-radius: 10px;
+}
+.uwp-switchslider:before {
+    position: absolute;
+    content: "";
+    height: 10px;
+    width: 10px;
+    left: 3px;
+    top: 3px;
+    background-color: #333333;
+    border-radius: 50%;
+    transition: ease all 0.15s;
+}
+.uwp-switchslider:hover {
+    opacity: 0.8;
+}
+input:checked + .uwp-switchslider {
+    border-color: rgb(var(--accent-color));
+    background-color: rgb(var(--accent-color));
+}
+input:checked + .uwp-switchslider:before {
+    left: 26px;
+    background-color: white;
+}
