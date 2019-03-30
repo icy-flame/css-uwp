@@ -16,6 +16,7 @@ a {
     color: rgb(var(--accent-color));
     transition: ease all 0.05s;
     text-decoration: none;
+    font-family: sans-serif;
 }
 a:hover {
     color: #666666;
@@ -121,14 +122,14 @@ a:active {
 }
 .uwp-checkbox:hover .uwp-checkmark {
     border-color: black !important;
-}
+} 
 .uwp-checkbox:active .uwp-checkmark {
     background-color: #666666 !important;
     border-color: transparent !important;
 }
 .uwp-checkbox input:checked ~ .uwp-checkmark {
     background-color: rgb(var(--accent-color));
-    border: 2px solid rgb(var(--accent-color));
+    border-color: rgb(var(--accent-color));
 }
 .uwp-checkbox input:checked ~ .uwp-checkmark:after {
     display: inline-block;
@@ -155,6 +156,7 @@ a:active {
     outline: 0;
     font-size: 14px;
     border: 2px solid #999999;
+    border-radius: 0;
     width: 256px;
     transition: ease all 0.1s;
     font-family: sans-serif;
@@ -173,6 +175,7 @@ a:active {
     margin-inline-start: 4px;
     margin-inline-end: 4px;
     border: 2px solid #999999;
+    border-radius: 0;
     outline: 0;
     padding: 4px 8px;
     margin-top: 4px;
