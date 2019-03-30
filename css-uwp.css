@@ -191,6 +191,7 @@ a:active {
     height: 2px;
     background-color: #999999;
     outline: none;
+    font-family: sans-serif;
 }
 .uwp-slider::-webkit-slider-thumb {
     -webkit-appearance: none;
