@@ -18,6 +18,10 @@ If you want to change the accent color, add the following code to your HTML page
 ```
 <hr>
 ```
+### Hyperlink
+```
+<a href="">Hyperlink</a>
+```
 ### Button
 Gray
 ```
@@ -35,9 +39,9 @@ Colored
 ```
 <label class="uwp-checkbox"><input type="radio" name="radio"><span class="uwp-radiomark"></span>Radio Button</label>
 ```
-### Switch
+### Toggle
 ```
-<label class="uwp-switch"><input type="checkbox"><span class="uwp-switchslider"></span></label>
+<label class="uwp-toggle"><input type="checkbox"><span class="uwp-toggleslider"></span></label>
 ```
 ### Textbox
 ```
